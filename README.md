@@ -1,2 +1,3 @@
 # Santander-Fondos
-Parsear los datos de la página de Santander para almacenar y analizar los indicadores de los distintos FCI. Sugerir fondo segun parametros del usuario000
+Pequeño programa sin GUI que recolecta data de la página de Santander para analizar e interpretar los indicadores de los distintos FCI. Sugiere fondo segun parametros del usuario
+
