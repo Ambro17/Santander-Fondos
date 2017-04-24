@@ -20,11 +20,33 @@ def capturarFecha(rows):
 def capturarCat(rows):
      return rows[1].th.string
 
-def procesarFondos(rows):
-    rowsFondos = rows[2:] # perdon dios de la programación
+def inicializarTablaFondos(rows):
+    tabla = [[0 for i in range(6)] for j in range(21)]
+    # capturo la tr que contiene los nombres de las columnas para los valores del fondo
+    rowTags = rows[2]
+    i=0
+    for th in rowTags.find_all("th"):
+        tabla[0][i] = th.string
+        i+=1
+    return tabla
 
+
+def procesarFondos(rows):
+    tabla = inicializarTablaFondos(rows)
+    rowFondos = rows[3:] # elimino la row fecha,categoria, y tags cuyos datos ya fueron capturados
+    i = 1
+    for row in islice(rowFondos,35): # limito fondo pesos TODO: agregar el resto
+        if row.contents: # si tiene contenido
+            j = 0
+            for valor in valores:
+                tabla[i][j] = valor
+                j+=1
+            print("Check solo quedan valores")
+            print(row)
+            i+=1
     return -1
-def procesarTabla(unaWeb,fecha, tabla):
+
+def procesarTabla(unaWeb,fecha):
     rows = web.find_all("tr")
     fecha = capturarFecha(rows)
     categoria = capturarCat(rows)
@@ -33,8 +55,7 @@ def procesarTabla(unaWeb,fecha, tabla):
 
 
 """ ######### COMIENZO PROGRAMA ######### """
-#abro página que contiene la tabla a la que llama el html original con ajax
-tabla = [[0 for i in range(6)] for j in range(21)] #matriz de 8 columnas y 17 filas
+#   abro página que contiene la tabla a la que llama el html original con ajax
 urltabla = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
 webrio = urllib.request.urlopen(urltabla).read()
 # Guardo archivo html
@@ -43,4 +64,4 @@ archivo_html = io.open('Fondos-%s.dat' % timestr, 'w+', encoding="UTF-8")
 web = BeautifulSoup(webrio,"html.parser")
 archivo_html.write(web.prettify())
 fecha = ""
-procesarTabla(web,fecha,tabla)
+procesarTabla(web,fecha)
