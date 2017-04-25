@@ -21,7 +21,9 @@ def capturarCat(rows):
      return rows[1].th.string
 
 def inicializarTablaFondos(rows):
-    tabla = [[0 for i in range(6)] for j in range(21)]
+    cant_campos = 6
+    cant_fondos_pesos = 21
+    tabla = [[0 for i in range(cant_campos)] for j in range(cant_fondos_pesos)]
     # capturo la tr que contiene los nombres de las columnas para los valores del fondo
     rowTags = rows[2]
     i=0
@@ -36,18 +38,20 @@ def procesarFondos(rows):
     rowFondos = rows[3:] # elimino la row fecha,categoria, y tags cuyos datos ya fueron capturados
     i = 1
     for row in islice(rowFondos,35): # limito fondo pesos TODO: agregar el resto
-        if row.contents: # si tiene contenido
-            j = 0
-            for valor in valores:
-                tabla[i][j] = valor
-                j+=1
-            print("Check solo quedan valores")
+        if row.contents: # if no esta vacìa
+            # meter fondo y valores
             print(row)
             i+=1
     return -1
 
-def procesarTabla(unaWeb,fecha):
-    rows = web.find_all("tr")
+def removeColTags(a_web):
+    cant_col_tags = len(a_web.find_all("col"))
+    for i in range(0,cant_col_tags):
+        a_web.col.unwrap()
+    return a_web
+def procesarTabla(unaWeb):
+    web = removeColTags(unaWeb)
+    rows = web.div.table.find_all("tr", recursive=False)
     fecha = capturarFecha(rows)
     categoria = capturarCat(rows)
     procesarFondos(rows)
@@ -61,7 +65,7 @@ webrio = urllib.request.urlopen(urltabla).read()
 # Guardo archivo html
 timestr = time.strftime("%Y%m%d")
 archivo_html = io.open('Fondos-%s.dat' % timestr, 'w+', encoding="UTF-8")
-web = BeautifulSoup(webrio,"html.parser")
-archivo_html.write(web.prettify())
+bsweb = BeautifulSoup(webrio,"html.parser")
+archivo_html.write(bsweb.prettify())
 fecha = ""
-procesarTabla(web,fecha)
+procesarTabla(bsweb)
