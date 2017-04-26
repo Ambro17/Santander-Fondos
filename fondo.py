@@ -32,29 +32,48 @@ def inicializarTablaFondos(rows):
         i+=1
     return tabla
 
-
-def procesarFondos(rows):
-    tabla = inicializarTablaFondos(rows)
-    rowFondos = rows[3:] # elimino la row fecha,categoria, y tags cuyos datos ya fueron capturados
-    i = 1
-    for row in islice(rowFondos,35): # limito fondo pesos TODO: agregar el resto
-        if row.contents: # if no esta vacìa
-            # meter fondo y valores
-            print(row)
-            i+=1
-    return -1
-
 def removeColTags(a_web):
     cant_col_tags = len(a_web.find_all("col"))
     for i in range(0,cant_col_tags):
         a_web.col.unwrap()
     return a_web
+
+# def getName(anrow):
+#     return anrow
+#
+# def getIndicadores(arow):
+#     indicadores = []
+#     arow = arow.find_all("td")
+#     celdasValores = arow[1:] # la primera tiene el nombre
+#     for celda in celdasValores:
+#         valor_numerico = celda.string
+#         indicadores.append(valor_numerico)
+#     return indicadores
+# def getData(arow):
+#     nombre = arow.td.strings
+#     #indicators= getIndicadores(arow)
+#     return -1
+def getName(arow):
+    a = arow.td
+    return a
+
+def procesarFondos(rows,fecha):
+    # pongo nombres de columnas en primera fila como headers.
+    tabla = inicializarTablaFondos(rows)
+    rowFondos = rows[3:] # elimino la row fecha,categoria, y tags cuyos datos ya fueron capturados
+    i = 1
+    for row in islice(rowFondos,35): # limito fondo pesos TODO: agregar el resto
+        if row.contents: # if no esta vacìa
+            nombre = getName(row)
+            #print(name+"\n"+repr(indicadores)+"\n****")
+    return -1
+
 def procesarTabla(unaWeb):
     web = removeColTags(unaWeb)
     rows = web.div.table.find_all("tr", recursive=False)
     fecha = capturarFecha(rows)
     categoria = capturarCat(rows)
-    procesarFondos(rows)
+    procesarFondos(rows,fecha)
 
 
 
