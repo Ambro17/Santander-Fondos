@@ -4,13 +4,6 @@ from itertools import islice
 import time
 import io
 from dateutil import parser
-# Nombres identificadores para facilitar la lectura/acceso a la matriz
-COLFONDONAME = 0
-COLVALFECHA  = 1
-COLVARDIARIA = 2
-COLLAST30    = 3
-COLLAST90    = 4
-COLVARANUAL  = 5
 
 def capturarFecha(rows):
     # capturo el string fecha en row 0, parseo la string y la convierto a formato dd/mm/aaaa
@@ -38,26 +31,8 @@ def removeColTags(a_web):
         a_web.col.unwrap()
     return a_web
 
-
 def filtrarFondosPesos(rows):
     return rows[3:21]
-# def getName(anrow):
-#     return anrow
-#
-# def getIndicadores(arow):
-#     indicadores = []
-#     arow = arow.find_all("td")
-#     celdasValores = arow[1:] # la primera tiene el nombre
-#     for celda in celdasValores:
-#         valor_numerico = celda.string
-#         indicadores.append(valor_numerico)
-#     return indicadores
-# def getData(arow):
-#     nombre = arow.td.strings
-#     #indicators= getIndicadores(arow)
-# #     return -1
-# def has_class_but_no_id(tag):
-#     return tag.has_attr('class') and not tag.has_attr('id')
 
 def esCampoValor(td):
     return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
@@ -77,6 +52,9 @@ def getIndicadores(amotherrow):
         indicadores.append(td.string)
     return indicadores
 
+def capturarRowsFondos(aWeb):
+    return aWeb.div.table.find_all("tr", recursive=False)
+
 def procesarFondos(rows,fecha):
     # pongo nombres de columnas en primera fila como headers.
     tabla = inicializarTablaFondos(rows)
@@ -85,27 +63,29 @@ def procesarFondos(rows,fecha):
         if row.contents: # si tiene algo dentro
             nombre = getName(row)
             indicadores = getIndicadores(row)
-            print(indicadores)
-            #print(name+"\n"+repr(indicadores)+"\n****")
+    #create json object, fecha,nombre,indicadores :)
+
+    # poner la logica para entender letes y no inicializar nueva tabla, o si? para mayor orden..
+
     return -1
 
 def procesarTabla(unaWeb):
     web = removeColTags(unaWeb)
-    rows = web.div.table.find_all("tr", recursive=False)
+    rows = capturarRowsFondos(unaWeb)
     fecha = capturarFecha(rows)
-    categoria = capturarCat(rows)
+    # categoria = capturarCat(rows) TODO: relevante solo si proceso todas las monedas
     procesarFondos(rows,fecha)
+    return -100 # devolver tabla
 
 
 
 """ ######### COMIENZO PROGRAMA ######### """
-#   abro página que contiene la tabla a la que llama el html original con ajax
-urltabla = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
-webrio = urllib.request.urlopen(urltabla).read()
-# Guardo archivo html
+# :: Abro página ::
+webrio = urllib.request.urlopen("http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento").read()
+# :: Guardo archivo html crudo ::
 timestr = time.strftime("%Y%m%d")
 archivo_html = io.open('Fondos-%s.dat' % timestr, 'w+', encoding="UTF-8")
 bsweb = BeautifulSoup(webrio,"html.parser")
 archivo_html.write(bsweb.prettify())
-fecha = ""
-procesarTabla(bsweb)
+# :: Proceso datos de tabla ::
+tabla = procesarTabla(bsweb)
