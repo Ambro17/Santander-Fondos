@@ -1,0 +1,1017 @@
+<div class="notaText">
+ <table align="center" width="100%">
+  <col width="40%">
+   <col width="12%">
+    <col width="12%">
+     <col width="12%">
+      <col width="12%">
+       <col width="12%">
+        <tr>
+         <th class="th2" colspan="6" height="20">
+          Rendimientos al 27/04/2017
+         </th>
+        </tr>
+        <tr>
+         <th class="th2" colspan="6" height="20">
+          FONDOS OPERATIVOS EN PESOS
+         </th>
+        </tr>
+        <tr>
+         <th rowspan="2">
+          Fondo
+         </th>
+         <th rowspan="2">
+          Valores a la Fecha
+         </th>
+         <th rowspan="2">
+          Variaci�n Diaria
+         </th>
+         <th rowspan="2">
+          �ltimos 30 d�as
+         </th>
+         <th rowspan="2">
+          �ltimos 90 d�as
+         </th>
+         <th rowspan="2">
+          Variaci�n Anual
+         </th>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER AHORRO $ CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          594,50
+         </td>
+         <td align="right" class="">
+          0,04
+         </td>
+         <td align="right" class="">
+          1,18
+         </td>
+         <td align="right" class="">
+          3,49
+         </td>
+         <td align="right" class="">
+          17,08
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER AHORRO PLUS CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          22.082,25
+         </td>
+         <td align="right" class="">
+          0,04
+         </td>
+         <td align="right" class="">
+          1,36
+         </td>
+         <td align="right" class="">
+          3,99
+         </td>
+         <td align="right" class="">
+          20,59
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGESTION MIX VI CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          5.082,02
+         </td>
+         <td align="right" class="">
+          0,07
+         </td>
+         <td align="right" class="">
+          1,60
+         </td>
+         <td align="right" class="">
+          4,85
+         </td>
+         <td align="right" class="">
+          28,51
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER BONOS FCI CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          27.314,12
+         </td>
+         <td align="right" class="">
+          0,13
+         </td>
+         <td align="right" class="">
+          0,52
+         </td>
+         <td align="right" class="">
+          (1,25)
+         </td>
+         <td align="right" class="">
+          17,50
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFDO RENTA FIJA CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          1.828,13
+         </td>
+         <td align="right" class="">
+          (0,26)
+         </td>
+         <td align="right" class="">
+          3,47
+         </td>
+         <td align="right" class="">
+          1,67
+         </td>
+         <td align="right" class="">
+          18,26
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGESTION FCI CUOTA C
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          14.633,63
+         </td>
+         <td align="right" class="">
+          (0,28)
+         </td>
+         <td align="right" class="">
+          1,95
+         </td>
+         <td align="right" class="">
+          3,16
+         </td>
+         <td align="right" class="">
+          35,31
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO RENTA $ CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          1.740,36
+         </td>
+         <td align="right" class="">
+          0,05
+         </td>
+         <td align="right" class="">
+          1,06
+         </td>
+         <td align="right" class="">
+          3,95
+         </td>
+         <td align="right" class="">
+          28,80
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGESTION FCI CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          14.633,61
+         </td>
+         <td align="right" class="">
+          (0,28)
+         </td>
+         <td align="right" class="">
+          1,95
+         </td>
+         <td align="right" class="">
+          3,16
+         </td>
+         <td align="right" class="">
+          0,00
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER FONDO COMBINADO CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          742,45
+         </td>
+         <td align="right" class="">
+          (0,15)
+         </td>
+         <td align="right" class="">
+          1,32
+         </td>
+         <td align="right" class="">
+          (0,26)
+         </td>
+         <td align="right" class="">
+          (25,75)
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO ACCIONES CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          2.757,46
+         </td>
+         <td align="right" class="">
+          (0,57)
+         </td>
+         <td align="right" class="">
+          3,05
+         </td>
+         <td align="right" class="">
+          6,70
+         </td>
+         <td align="right" class="">
+          44,37
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO RTA VARIABLE CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          39.453,27
+         </td>
+         <td align="right" class="">
+          (0,26)
+         </td>
+         <td align="right" class="">
+          4,69
+         </td>
+         <td align="right" class="">
+          11,55
+         </td>
+         <td align="right" class="">
+          52,08
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER RENTA FUTURA CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          12.146,80
+         </td>
+         <td align="right" class="">
+          (0,26)
+         </td>
+         <td align="right" class="">
+          1,21
+         </td>
+         <td align="right" class="">
+          1,15
+         </td>
+         <td align="right" class="">
+          30,78
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER RENTA FUTURA CUOTA B
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          12.146,98
+         </td>
+         <td align="right" class="">
+          (0,26)
+         </td>
+         <td align="right" class="">
+          1,21
+         </td>
+         <td align="right" class="">
+          1,15
+         </td>
+         <td align="right" class="">
+          30,78
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGESTION BALANCEADO CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          2.039,26
+         </td>
+         <td align="right" class="">
+          (0,40)
+         </td>
+         <td align="right" class="">
+          0,44
+         </td>
+         <td align="right" class="">
+          0,09
+         </td>
+         <td align="right" class="">
+          21,42
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGESTION BALANCEADO CUOTA C
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          2.071,60
+         </td>
+         <td align="right" class="">
+          (0,40)
+         </td>
+         <td align="right" class="">
+          0,37
+         </td>
+         <td align="right" class="">
+          (0,15)
+         </td>
+         <td align="right" class="">
+          20,47
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGEST MULTIMERCADO CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          2.825,77
+         </td>
+         <td align="right" class="">
+          (0,36)
+         </td>
+         <td align="right" class="">
+          1,20
+         </td>
+         <td align="right" class="">
+          0,70
+         </td>
+         <td align="right" class="">
+          26,16
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERGEST MULTIMERCADO CUOTA C
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          3.043,23
+         </td>
+         <td align="right" class="">
+          (0,35)
+         </td>
+         <td align="right" class="">
+          1,35
+         </td>
+         <td align="right" class="">
+          1,16
+         </td>
+         <td align="right" class="">
+          28,51
+         </td>
+        </tr>
+        <br/>
+        <tr>
+         <th class="th2" colspan="6" height="20">
+          FONDOS OPERATIVOS EN DOLARES
+         </th>
+        </tr>
+        <tr>
+         <th rowspan="2">
+          Fondo
+         </th>
+         <th rowspan="2">
+          Valores a la Fecha
+         </th>
+         <th rowspan="2">
+          Variaci�n Diaria
+         </th>
+         <th rowspan="2">
+          �ltimos 30 d�as
+         </th>
+         <th rowspan="2">
+          �ltimos 90 d�as
+         </th>
+         <th rowspan="2">
+          Variaci�n Anual
+         </th>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO RENTA FIJA DOLARES CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          1.070,66
+         </td>
+         <td align="right" class="">
+          0,02
+         </td>
+         <td align="right" class="">
+          0,92
+         </td>
+         <td align="right" class="">
+          1,58
+         </td>
+         <td align="right" class="">
+          5,79
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO ESTRATEGICO CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          1.000,88
+         </td>
+         <td align="right" class="">
+          0,00
+         </td>
+         <td align="right" class="">
+          0,09
+         </td>
+         <td align="right" class="">
+          0,09
+         </td>
+         <td align="right" class="">
+          0,09
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SF RTA FIJA DOLARES II LEY 27260 CTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          1.006,44
+         </td>
+         <td align="right" class="">
+          0,04
+         </td>
+         <td align="right" class="">
+          0,37
+         </td>
+         <td align="right" class="">
+          0,62
+         </td>
+         <td align="right" class="">
+          0,00
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO LATINOAMERICA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          3.659,33
+         </td>
+         <td align="right" class="">
+          (0,89)
+         </td>
+         <td align="right" class="">
+          (0,68)
+         </td>
+         <td align="right" class="">
+          3,43
+         </td>
+         <td align="right" class="">
+          19,63
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO ACCIONES BRASIL A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          1.295,25
+         </td>
+         <td align="right" class="">
+          (0,43)
+         </td>
+         <td align="right" class="">
+          (1,76)
+         </td>
+         <td align="right" class="">
+          (4,70)
+         </td>
+         <td align="right" class="">
+          20,04
+         </td>
+        </tr>
+        <br/>
+        <tr>
+         <td>
+         </td>
+         <!--td colspan="6" class="inversionesFondosRendimiento" height="20"> Informamos 
+    que por el momento, por una normativa del BCRA (comunicaci�n �A� 4728), publicada 
+    el 1 de noviembre de 2007, no se pueden hacer suscripciones en d�lares billete. 
+    Se puede suscribir a los fondos que operan con activos internacionales pero 
+    en $. <br/>
+    </td-->
+        </tr>
+        <tr>
+         <th class="th2" colspan="6" height="20">
+          FONDOS REPROGRAMADOS Y DE LETES
+         </th>
+        </tr>
+        <tr>
+         <th rowspan="2">
+          Fondo
+         </th>
+         <th rowspan="2">
+          Valores a la Fecha
+         </th>
+         <th rowspan="2">
+          Variaci�n Diaria
+         </th>
+         <th rowspan="2">
+          �ltimos 30 d�as
+         </th>
+         <th rowspan="2">
+          �ltimos 90 d�as
+         </th>
+         <th rowspan="2">
+          Variaci�n Anual
+         </th>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER AHORRO U$S CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          118,92
+         </td>
+         <td align="right" class="">
+          0,08
+         </td>
+         <td align="right" class="">
+          (0,31)
+         </td>
+         <td align="right" class="">
+          (1,00)
+         </td>
+         <td align="right" class="">
+          (6,38)
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO AHORRO U$S CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          757,26
+         </td>
+         <td align="right" class="">
+          0,36
+         </td>
+         <td align="right" class="">
+          0,37
+         </td>
+         <td align="right" class="">
+          1,76
+         </td>
+         <td align="right" class="">
+          (7,12)
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO 2000 CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          2,07
+         </td>
+         <td align="right" class="">
+          (0,21)
+         </td>
+         <td align="right" class="">
+          (0,55)
+         </td>
+         <td align="right" class="">
+          (0,18)
+         </td>
+         <td align="right" class="">
+          0,96
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER 2000 PLAZO FIJO CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          110,90
+         </td>
+         <td align="right" class="">
+          0,46
+         </td>
+         <td align="right" class="">
+          0,77
+         </td>
+         <td align="right" class="">
+          3,13
+         </td>
+         <td align="right" class="">
+          (8,07)
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO 2001 CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          98,38
+         </td>
+         <td align="right" class="">
+          (0,05)
+         </td>
+         <td align="right" class="">
+          (1,00)
+         </td>
+         <td align="right" class="">
+          (2,98)
+         </td>
+         <td align="right" class="">
+          (5,55)
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER AHORRO U$S EX LET CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          115,49
+         </td>
+         <td align="right" class="">
+          0,00
+         </td>
+         <td align="right" class="">
+          1,99
+         </td>
+         <td align="right" class="">
+          2,69
+         </td>
+         <td align="right" class="">
+          6,27
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPERFONDO AHORRO U$S EX LET CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          618,71
+         </td>
+         <td align="right" class="">
+          (0,39)
+         </td>
+         <td align="right" class="">
+          (5,45)
+         </td>
+         <td align="right" class="">
+          (18,58)
+         </td>
+         <td align="right" class="">
+          (17,61)
+         </td>
+        </tr>
+        <tr>
+         <td align="left" class="">
+          <table border="0" style="table-layout:auto; background-color:transparent;" width="100%">
+           <tr>
+            <td align="left" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="90%">
+             SUPER 2001 EX LET CUOTA A
+            </td>
+            <td align="right" nowrap="" style="border-width:0px; padding: 1px; background-color:transparent;" width="10%">
+             <!-- <a href='#' class="formlink2" onmouseover="return overlib( 'Dep�sitos a la Vista y Plazos Fijos en Bancos locales.', CAPTION, 'Super Ahorro $', CENTER );" onmouseout='return nd();'></a>&nbsp; -->
+             <!-- <a href="javascript:top.abrirFondosPDF( 'FactSheet_Superahorro$A.pdf' );"></a> -->
+            </td>
+           </tr>
+          </table>
+         </td>
+         <td align="right" class="">
+          99,69
+         </td>
+         <td align="right" class="">
+          (0,01)
+         </td>
+         <td align="right" class="">
+          1,46
+         </td>
+         <td align="right" class="">
+          1,83
+         </td>
+         <td align="right" class="">
+          4,99
+         </td>
+        </tr>
+        <br/>
+        <!--</body>-->
+        <!--</html>-->
+       </col>
+      </col>
+     </col>
+    </col>
+   </col>
+  </col>
+ </table>
+</div>
