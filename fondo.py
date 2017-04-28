@@ -4,13 +4,9 @@ from itertools import islice
 import time
 import io
 from dateutil import parser
-# Nombres identificadores para facilitar la lectura/acceso a la matriz
-COLFONDONAME = 0
-COLVALFECHA  = 1
-COLVARDIARIA = 2
-COLLAST30    = 3
-COLLAST90    = 4
-COLVARANUAL  = 5
+
+# EXTENSION DOL-LETES
+
 
 def capturarFecha(rows):
     # capturo el string fecha en row 0, parseo la string y la convierto a formato dd/mm/aaaa
