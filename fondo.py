@@ -38,6 +38,9 @@ def removeColTags(a_web):
         a_web.col.unwrap()
     return a_web
 
+
+def filtrarFondosPesos(rows):
+    return rows[3:21]
 # def getName(anrow):
 #     return anrow
 #
@@ -52,19 +55,37 @@ def removeColTags(a_web):
 # def getData(arow):
 #     nombre = arow.td.strings
 #     #indicators= getIndicadores(arow)
-#     return -1
+# #     return -1
+# def has_class_but_no_id(tag):
+#     return tag.has_attr('class') and not tag.has_attr('id')
+
+def esCampoValor(td):
+    return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
+
+def getCamposIndicadores(amotherrow):
+    var = amotherrow.find_all(esCampoValor)
+    return var
+
 def getName(arow):
-    a = arow.td
-    return a
+    strCelda = arow.td.table.tr.td.string
+    return strCelda.strip()
+
+def getIndicadores(amotherrow):
+    indicadores = []
+    td_valores = getCamposIndicadores(amotherrow)
+    for td in td_valores:
+        indicadores.append(td.string)
+    return indicadores
 
 def procesarFondos(rows,fecha):
     # pongo nombres de columnas en primera fila como headers.
     tabla = inicializarTablaFondos(rows)
-    rowFondos = rows[3:] # elimino la row fecha,categoria, y tags cuyos datos ya fueron capturados
-    i = 1
-    for row in islice(rowFondos,35): # limito fondo pesos TODO: agregar el resto
-        if row.contents: # if no esta vacìa
+    rowsPesos = filtrarFondosPesos(rows)
+    for row in rowsPesos:
+        if row.contents: # si tiene algo dentro
             nombre = getName(row)
+            indicadores = getIndicadores(row)
+            print(indicadores)
             #print(name+"\n"+repr(indicadores)+"\n****")
     return -1
 
