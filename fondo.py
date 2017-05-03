@@ -7,14 +7,14 @@ from dateutil import parser
 
 # EXTENSION DOL-LETES
 class TablaDiaria:
-    def __init__(self,tablapes,tabladolar,tablaletes):
+    def __init__(self, tablapes, tabladolar, tablaletes):
         tablapesos = tablapes
         tabladolares = tabladolar
         assert isinstance(tablaletes, TablaFondo), "El argumento ingresado es invalido. No es una instancia de TablaFondo"
         tablaletras = tablaletes
 
 class TablaFondo:
-    headers = [] # headers se reciben o los tiene la clase? si los tiene la clase que parece lo mas logico. De donde los saca, harcodea por conocimiento y estudio del problema? eso es correcto?..
+    headers = [0,0,0,0,0 ] # headers se reciben o los tiene la clase? si los tiene la clase que parece lo mas logico. De donde los saca, harcodea por conocimiento y estudio del problema? eso es correcto?..
     def __init__(self,fech, tipomoneda, losfondos):
         self.fecha = fecha
         self.moneda = tipomoneda  
@@ -30,25 +30,24 @@ class Fondo:
         self.fecha = fecha_referencia
 # maestro lista fondos por moneda.
 
-def capturarFecha(rows):
+def capturarFecha(web_original):
     # capturo el string fecha en row 0, parseo la string y la convierto a formato dd/mm/aaaa
-    textoFecha = rows[0].th.string
+    simple_web = removeColTags(web_original)
+    textoFecha = simple_web.div.table.tr.th.string
     return parser.parse(textoFecha,fuzzy=True).strftime("%d/%m/%Y")
 
-def capturarCat(rows):
-     return rows[1].th.string
-
-def inicializarTablaFondos(rows):
-    cant_campos = 6
-    cant_fondos_pesos = 21
-    tabla = [[0 for i in range(cant_campos)] for j in range(cant_fondos_pesos)] #todo modify limit
-    # capturo la tr que contiene los nombres de las columnas para los valores del fondo
-    rowTags = rows[2]
-    i=0
-    for th in rowTags.find_all("th"):
-        tabla[0][i] = th.string
-        i+=1
-    return tabla
+# def inicializarTablaFondos(rows):
+#     cant_campos = 6  # 5 indicadores + name
+#     cant_fondos_pesos = 21
+#     tabla = [[0 for i in range(cant_campos)] for j in range(cant_fondos_pesos)] #todo modify limit
+#     # capturo la tr que contiene los nombres de las columnas para los valores del fondo
+#     rowTags = rows[2]
+#     i=0
+#     for th in rowTags.find_all("th"):
+#         tabla[0][i] = th.string
+#         i+=1
+#     print(tabla)
+#     return tabla
 
 def removeColTags(a_web):
     cant_col_tags = len(a_web.find_all("col"))
@@ -56,15 +55,11 @@ def removeColTags(a_web):
         a_web.col.unwrap()
     return a_web
 
-def filtrarFondosPesos(rows):
-    return rows[3:21]
-
-def esCampoValor(td):
+def esCampoIndicador(td):
     return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
 
 def getCamposIndicadores(amotherrow):
-    var = amotherrow.find_all(esCampoValor)
-    return var
+    return amotherrow.find_all(esCampoIndicador)
 
 def getName(arow):
     strCelda = arow.td.table.tr.td.string
@@ -74,42 +69,49 @@ def getIndicadores(amotherrow):
     indicadores = []
     td_valores = getCamposIndicadores(amotherrow)
     for td in td_valores:
-        indicadores.append(td.string)
+        valor_num = int(td.string)
+        indicadores.append(valor_num)
     return indicadores
 
+def existe(obj):
+    return obj != None
+def esEncabezado(row):
+    lo_es = False
+    first_h = row.find("th",{"class": "th2"})
+    if existe(first_h):
+        lo_es = True
+    return lo_es
+
+def lastWord(row):
+    return row.th.string.split()[-1]
+
 def procesarFondos(rows,fecha):
-    # pongo nombres de columnas en primera fila como headers.
-    tabla = inicializarTablaFondos(rows)
-    rowsPesos = filtrarFondosPesos(rows)
-    for row in rowsPesos:
+    true_rows = rows[1:] # quita header fecha
+    for row in true_rows:
         if row.contents: # si tiene algo dentro
-            nombre = getName(row)
-            indicadores = getIndicadores(row)
-            print(indicadores)
-            #print(name+"\n"+repr(indicadores)+"\n****")
+            if esEncabezado(row):
+                tipoMoneda = lastWord(row)
+                print("Soy header categoria: %s" % tipoMoneda)
+
+
+                #nombre = getName(row)
+                #indicadores = getIndicadores(row)
+                #print(nombre+"\n"+repr(indicadores)+"\n****")
     return -1
 
 def procesarTabla(unaWeb):
+    fecha = capturarFecha(unaWeb)
     web = removeColTags(unaWeb)
     rows = web.div.table.find_all("tr", recursive=False)
-    fecha = capturarFecha(rows)
     procesarFondos(rows,fecha)
 
-def tableDate(web_tokenizada):
-    simple_web = removeColTags(web_tokenizada)
-    return simple_web.div.table.tr.th.string
 
-def tokenizarWeb(web_cruda):
-    return
 def backupSourceFile(webrio): #TODO: agregar logica de que si la tabla contiene la misma fecha elimina/no backupea el archivo (info duplicada)
     try:
-        # MAL, EL BACKUP DEBE GUARDARLO CRUDO, NO IMPORTA QUE YO LO VEA MAL, LO PONGO EN UN FORMATTER, PERO PARA NO PERDER NADA LO DEJO SIN MANIPULAR.
-        # UNA VEZ QUE LO TENGO CRUDO A WEB, LO [def tokenizarWeb(web_cruda):: web->web_tokenizada]
-        # web de urllib debe responder igual (una bsweb) que  (nooo) file from html. No  xq una vez que tengo los datos procesados no lo debo hacer de vuelta.
-        # creo (si no existe) un archivo con un nombre asociado a la fecha
+        # *Considerar guardar el archivo html sin embellecer para menor dependencia y mayor confianza en la integridad de los datos.**
         stringfecha = time.strftime("%Y%m%d")
         file_name = 'Fondos-%s.dat' % stringfecha
-        html_file = io.open(file_name, 'x', encoding="UTF-8")
+        html_file = io.open(file_name, 'w', encoding="UTF-8")
         # le escribo el arbol del html webrio prettified (tabulado)
         html_tokenizado = BeautifulSoup(webrio, "html.parser")
         # TODO: escribir sólo si la fecha no coincide con la del dia anterior. (function TableDate :: Tabla->String->Bool)
@@ -126,9 +128,6 @@ def backupSourceFile(webrio): #TODO: agregar logica de que si la tabla contiene 
 #   abro página que contiene la tabla a la que llama el html original con ajax
 url = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
 webrio = urllib.request.urlopen(url).read()
-print(webrio)
 # Guardo archivo html y obtengo el html tokenizado
 bsweb = backupSourceFile(webrio)
-fecha = ""
 procesarTabla(bsweb)
-tableDate(bsweb)
