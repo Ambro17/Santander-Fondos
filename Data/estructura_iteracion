@@ -1,0 +1,31 @@
+def filtrarFondos(todaslasRows):
+	rows_utiles = todaslasrows[1:] # sin fecha
+	if esCategoria(row)
+		while not newCategoria
+			for row in rows
+			 if esCategoria(X):
+			 	finSubTabla = True
+			 if row.contents and not finSubTabla:
+                    fpesos.append( (getName(row), getIndicadores(row)) )
+
+
+
+
+ 	CATEGORIA
+ 	HEADERS
+ 	ROW1
+ 	ROW2
+ 	ROWN
+ 	CATEGORIA
+ 	HEADERS
+ 	ROW1
+ 	ROW2
+ 	ROWN
+ 	CATEGORIA
+ 	HEADERS
+ 	ROW1
+ 	ROW2
+ 	ROWN
+
+ ---> Iterar por cada secuencia de rows, añadiendo valores a lista. While? For? separar listas?
+ 
