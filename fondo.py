@@ -15,16 +15,16 @@ class NoNewData(Exception):
     pass
 # ================= CLASES del dominio ================= #
 class RendimientoDiario:
-    def __init__(self, tablapes, tabladolar, tablaletes):
-        tablapesos = tablapes
-        tabladolares = tabladolar
-        assert isinstance(tablaletes, FondosDeMoneda), "El argumento ingresado es invalido. No es una instancia de TablaFondo"
-        tablaletras = tablaletes
+    def __init__(self, a_fecha, tablapes, tabladolar, tablaletras):
+        self.fecha= a_fecha
+        self.tablapesos = tablapes
+        self.tabladolares = tabladolar
+        assert isinstance(tablaletras, FondosDeMoneda), "El argumento ingresado es invalido. No es una instancia de TablaFondo"
+        self.tablaletes = tablaletras
 
 class FondosDeMoneda:
     headers = [0,0,0,0,0 ] # headers se reciben o los tiene la clase? si los tiene la clase que parece lo mas logico. De donde los saca, harcodea por conocimiento y estudio del problema? eso es correcto?..
-    def __init__(self,fech, tipomoneda, losfondos):
-        self.fecha = fech
+    def __init__(self, tipomoneda, losfondos):
         self.moneda = tipomoneda  
         self.fondos = losfondos
     # debe contener los headers.
@@ -32,10 +32,9 @@ class FondosDeMoneda:
         return 1
 
 class Fondo:
-    def __init__(self, nombre, los_indicadores, fecha_referencia):
+    def __init__(self, nombre, los_indicadores):
         self.name = nombre
         self.indicadores = los_indicadores
-        self.fecha = fecha_referencia
 
 # ================= FUNCIONES auxiliares ================= #
 
@@ -43,13 +42,6 @@ def capturarFecha(web_sincols):
     # capturo el string fecha en row 0, parseo la string y la convierto a formato dd/mm/aaaa. Considerar normalizar el formato de fechas (on filename)
     textoFecha = web_sincols.div.table.tr.th.string
     return parser.parse(textoFecha,fuzzy=True).strftime("%Y/%m/%d")
-
-def removeColTags(a_web):
-    cant_col_tags = len(a_web.find_all("col"))
-    for i in range(0,cant_col_tags):
-        a_web.col.unwrap()
-    return a_web
-
 
 def esCampoIndicador(td):
     return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
@@ -61,6 +53,14 @@ def getName(arow):
     strCelda = arow.td.table.tr.td.string
     return strCelda.strip()
 
+def getIndicadores(amotherrow):
+    indicadores = []
+    td_valores = getCamposIndicadores(amotherrow)
+    for td in td_valores:
+        valor_num = dfloat(td.string)
+        indicadores.append(valor_num)
+    return indicadores
+
 def isNegative(str):
     return '(' in str and ')' in str
 def parseNegative(str):
@@ -70,13 +70,6 @@ def dfloat(string):
         string = parseNegative(string)
     return float(string.replace(".","").replace(",",".")) # thanks obama
 
-def getIndicadores(amotherrow):
-    indicadores = []
-    td_valores = getCamposIndicadores(amotherrow)
-    for td in td_valores:
-        valor_num = dfloat(td.string)
-        indicadores.append(valor_num)
-    return indicadores
 
 def existe(obj):
     return obj != None
@@ -85,7 +78,7 @@ def esEncabezado(row):
     if existe(row.find("th",{"class": "th2"})):
         lo_es = True
     return lo_es
-    # Probar: return True if existe(row.find("th",{"class": "th2"})) else False
+    # Probar: return (True if) existe(row.find("th",{"class": "th2"})) (or/elswe) False
 
 def lastWord(row):
     return row.th.string.split()[-1] # obtiene la ultima palabra de un row header
@@ -112,37 +105,63 @@ def esCategoria(row,strCat):
     return lastWord(row) == strCat
 
 def filtrarFondos(rows):
-    fpesos=rows[1:20]
-    fdol=rows[20:29]
+    fpesos=rows[0:19]
+    fdol=rows[19:29]
     fletes=rows[29:40]
     return (fpesos,fdol,fletes) # comienzan por header categoria/headers/rowsfondos al mismo nivel de row.
 
+def getHeaders(row):
+    headers=[]
+    for th in row.find_all("th"):
+        headers.append(th.string)
+    return headers # armar dicc? o const de referencia
 
+def storeData(rowsfondo):
+    moneda = lastWord(rowsfondo[0])
+    Fondos = []
+    print(moneda)
+    headers = getHeaders(rowsfondo[1]) # armar dicc?
+    onlyfondosrows = rowsfondo[2:] # ignoro row headers
+    for row in onlyfondosrows:
+        fondo = Fondo(getName(row), getIndicadores(row))
+        Fondos.append(fondo)
+    print(repr(Fondos))
+    FondosDeMoneda(moneda,Fondos) # new FondosDeMoneda
+    print(repr(FondosDeMoneda))
+    pass
 def procesarFondos(rows, fecha):
     true_rows = rows[1:]
-    fondosPesos, fondosDol, fondosletes = filtrarFondos(true_rows)
-    print("##################################Pes")
-    print(fondosPesos)
-    print("##################################Dol")
-    print(fondosDol)
-    print("##################################Let")
-    print(fondosLetes)
+    fondosPesos, fondosDol, fondosLetes = filtrarFondos(true_rows)
+    storeData(fondosPesos)
     # creacion de objetos
 
+def removeColTags(a_web):
+    col_tags = a_web.find_all("col")
+    [col_tag.unwrap() for col_tag in col_tags]
+    return a_web
+# parametrizar estas dos funciones con orden sup/parametros
+def removeEmptyTags(unaweb):
+    empty_tags = unaweb.find_all(lambda tag: not tag.contents)
+    [empty_tag.extract() for empty_tag in empty_tags]
+    return unaweb
+
+def limpiarWeb(absweb):
+    return removeEmptyTags(removeColTags(absweb))
+
 def procesarTabla(unaWeb):
-    web = removeColTags(unaWeb)
+    web = limpiarWeb(unaWeb)
     fecha = capturarFecha(web) # dd/mm/aaaa
     print("La fecha del dia de hoy es: " + fecha)
     rows = web.div.table.find_all("tr", recursive=False)
     procesarFondos(rows,fecha)
 
-def backupSourceFile(webrio): #TODO: agregar logica de que si la tabla contiene la misma fecha elimina/no backupea el archivo (info duplicada)
+def backupSourceFile(webrio):
     try:
         # *Considerar guardar el archivo html sin embellecer para menor dependencia y mayor confianza en la integridad de los datos.**
         stringfecha = time.strftime("%Y%m%d")
         file_name = 'Fondos-%s.dat' % stringfecha
         data_dir = os.path.join(dirPadre(), "Data")
-        html_file = io.open(os.path.join(data_dir,file_name), 'w', encoding="UTF-8")
+        html_file = io.open(os.path.join(data_dir,file_name), 'w', encoding="UTF-8") #cambiar a X cuando haga el tod.o debajo
         # le escribo el arbol del html webrio prettified (tabulado)
         html_tokenizado = BeautifulSoup(webrio, "html.parser")
         # TODO: escribir sólo si la fecha no coincide con la del dia anterior. (function TableDate :: Tabla->String->Bool)
