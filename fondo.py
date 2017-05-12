@@ -47,11 +47,6 @@ class Fondo:
 
 # ================= FUNCIONES auxiliares ================= #
 
-def capturarFecha(web_sincols):
-    # capturo el string fecha en row 0, parseo la string y la convierto a formato dd/mm/aaaa. Considerar normalizar el formato de fechas (on filename)
-    textoFecha = web_sincols.div.table.tr.th.string
-    return parser.parse(textoFecha,fuzzy=True).strftime("%Y/%m/%d")
-
 def esCampoIndicador(td):
     return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
 
@@ -132,7 +127,6 @@ def storeData(rowsfondo):
     for row in onlyfondosrows:
         fondo = Fondo(getName(row), getIndicadores(row))
         Fondos.append(fondo)
-
     return FondosDeMoneda(moneda,Fondos)
 
 def guardarRendimiento(fecha,fpes,fdol,flet):
@@ -145,7 +139,6 @@ def procesarFondos(rows, fecha):
     true_rows = rows[1:]
     fondosPesos, fondosDol, fondosLetes = filtrarFondos(true_rows)
     guardarRendimiento(fecha,fondosPesos,fondosDol,fondosLetes)
-    # creacion de objetos
 
 def removeColTags(a_web):
     col_tags = a_web.find_all("col")
@@ -160,10 +153,13 @@ def removeEmptyTags(unaweb):
 def limpiarWeb(absweb):
     return removeEmptyTags(removeColTags(absweb))
 
+def capturarFecha(web_sincols):
+    textoFecha = web_sincols.div.table.tr.th.string
+    return parser.parse(textoFecha,fuzzy=True).strftime("%Y/%m/%d")
+
 def procesarDatos(unaWeb):
     web = limpiarWeb(unaWeb)
-    fecha = capturarFecha(web) # aaaa/mm/dd
-    print("La fecha del dia de hoy es: " + fecha)
+    fecha = capturarFecha(web)
     rows = web.div.table.find_all("tr", recursive=False)
     procesarFondos(rows,fecha)
 
@@ -173,24 +169,28 @@ def backupSourceFile(webrio):
         stringfecha = time.strftime("%Y%m%d")
         file_name = 'Fondos-%s.dat' % stringfecha
         data_dir = os.path.join(dirPadre(), "Data")
-        html_file = io.open(os.path.join(data_dir,file_name), 'w', encoding="UTF-8") #cambiar a X cuando haga el tod.o debajo
+        html_file = io.open(os.path.join(data_dir,file_name), 'w', encoding="UTF-8")
         # le escribo el arbol del html webrio prettified (tabulado)
         html_tokenizado = BeautifulSoup(webrio, "html.parser")
         # TODO: escribir sólo si la fecha no coincide con la del dia anterior. (function TableDate :: Tabla->String->Bool)
         html_file.write(html_tokenizado.prettify())
         return html_tokenizado
     except FileExistsError:
-        print("Excepcion: ARCHIVO_YA_PROCESADO")
+        print("ARCHIVO_YA_PROCESADO.")
         print("Los datos de rendimiento del día de hoy ya han sido procesados.")
         exit(-1)
 
 
-
-""" ######### COMIENZO PROGRAMA ######### """
-# el save file es behind the user, las consultas son front end.
-#   abro página que contiene la tabla a la que llama el html original con ajax
+# ================= MAIN  ================= #
 url = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
 webrio = urllib.request.urlopen(url).read()
-# Guardo archivo html y obtengo el html tokenizado
 bsweb = backupSourceFile(webrio)
 procesarDatos(bsweb)
+# 1. Imprimir tabla de valores del día
+# 2. Imprimir historico de fondo
+# 3. Sugerir un fondo según móvil de inversion y aversión al riesgo definidas por el usuario
+# 4. --help con correspondencia entre Tipo de Renta y perfil de inversor, con comentario.
+# 1.2 Exportar Tabla historico, puntual a excel
+# 3.2 Asociar tipo de renta a perfil de aversion.
+
+
