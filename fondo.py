@@ -14,7 +14,14 @@ VARANUAL=4
 class NoNewData(Exception):
     pass
 # ================= CLASES del dominio ================= #
+class Historico:
+    'Registro histórico de los rendimientos de los fondos'
+    RendimientosDiarios=[]
+    def addRendimiento(self,renddiario):
+        RendimientoDiario.append(renddiario)
+
 class RendimientoDiario:
+    'La instancia de RendimientoDiario contiene las tablas de fondos en pesos, dolares y letes.'
     def __init__(self, a_fecha, tablapes, tabladolar, tablaletras):
         self.fecha= a_fecha
         self.tablapesos = tablapes
@@ -23,6 +30,7 @@ class RendimientoDiario:
         self.tablaletes = tablaletras
 
 class FondosDeMoneda:
+    'Representa una lista de fondos de cierta moneda'
     headers = [0,0,0,0,0 ] # headers se reciben o los tiene la clase? si los tiene la clase que parece lo mas logico. De donde los saca, harcodea por conocimiento y estudio del problema? eso es correcto?..
     def __init__(self, tipomoneda, losfondos):
         self.moneda = tipomoneda  
@@ -32,6 +40,7 @@ class FondosDeMoneda:
         return 1
 
 class Fondo:
+    'Representa un fondo y sus indicadores'
     def __init__(self, nombre, los_indicadores):
         self.name = nombre
         self.indicadores = los_indicadores
@@ -112,34 +121,37 @@ def filtrarFondos(rows):
 
 def getHeaders(row):
     headers=[]
-    for th in row.find_all("th"):
-        headers.append(th.string)
-    return headers # armar dicc? o const de referencia
+    [headers.append(th.string) for th in row.find_all("th")]
+    return headers
 
 def storeData(rowsfondo):
-    moneda = lastWord(rowsfondo[0])
     Fondos = []
-    print(moneda)
+    moneda = lastWord(rowsfondo[0])
     headers = getHeaders(rowsfondo[1]) # armar dicc?
-    onlyfondosrows = rowsfondo[2:] # ignoro row headers
+    onlyfondosrows = rowsfondo[2:] # me quedo solo con row de fondos
     for row in onlyfondosrows:
         fondo = Fondo(getName(row), getIndicadores(row))
         Fondos.append(fondo)
-    print(repr(Fondos))
-    FondosDeMoneda(moneda,Fondos) # new FondosDeMoneda
-    print(repr(FondosDeMoneda))
-    pass
+
+    return FondosDeMoneda(moneda,Fondos)
+
+def guardarRendimiento(fecha,fpes,fdol,flet):
+    fondo_pesos = storeData(fpes)
+    fondo_dollars = storeData(fdol)
+    fondo_letras = storeData(flet)
+    RendimientoDiario(fecha,fondo_pesos,fondo_dollars,fondo_letras)
+
 def procesarFondos(rows, fecha):
     true_rows = rows[1:]
     fondosPesos, fondosDol, fondosLetes = filtrarFondos(true_rows)
-    storeData(fondosPesos)
+    guardarRendimiento(fecha,fondosPesos,fondosDol,fondosLetes)
     # creacion de objetos
 
 def removeColTags(a_web):
     col_tags = a_web.find_all("col")
     [col_tag.unwrap() for col_tag in col_tags]
     return a_web
-# parametrizar estas dos funciones con orden sup/parametros
+# parametrizar estas dos funciones con orden sup/parametros (str y funcion la complican, podria hacer "col" una funcion dummy pero parece forzado)
 def removeEmptyTags(unaweb):
     empty_tags = unaweb.find_all(lambda tag: not tag.contents)
     [empty_tag.extract() for empty_tag in empty_tags]
@@ -148,9 +160,9 @@ def removeEmptyTags(unaweb):
 def limpiarWeb(absweb):
     return removeEmptyTags(removeColTags(absweb))
 
-def procesarTabla(unaWeb):
+def procesarDatos(unaWeb):
     web = limpiarWeb(unaWeb)
-    fecha = capturarFecha(web) # dd/mm/aaaa
+    fecha = capturarFecha(web) # aaaa/mm/dd
     print("La fecha del dia de hoy es: " + fecha)
     rows = web.div.table.find_all("tr", recursive=False)
     procesarFondos(rows,fecha)
@@ -175,9 +187,10 @@ def backupSourceFile(webrio):
 
 
 """ ######### COMIENZO PROGRAMA ######### """
+# el save file es behind the user, las consultas son front end.
 #   abro página que contiene la tabla a la que llama el html original con ajax
 url = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
 webrio = urllib.request.urlopen(url).read()
 # Guardo archivo html y obtengo el html tokenizado
 bsweb = backupSourceFile(webrio)
-procesarTabla(bsweb)
+procesarDatos(bsweb)
