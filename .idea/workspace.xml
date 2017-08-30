@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="176451a1-4817-4746-adb3-60de1c5ae3d9" name="Default" comment="Agregada persistencia de datos en JSON">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/company_data.pkl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170420.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170515.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170516.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170517.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170518.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170519.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170526.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170529-copy.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170529.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170530.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170531.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170601.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170605.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170606.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170607.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170608.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170609.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170612.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170613.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170614.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170615.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170616.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170619.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170621.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170622.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170623.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170626.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170628.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170629.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170630.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170703.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170704.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170705.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170706.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170707.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170711.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170712.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170714.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170717.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170725.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170726.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170802.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170803.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170807.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170808.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170809.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170810.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170811.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170815.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170817.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170818.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170822.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170823.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170824.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170825.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170829.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170830.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interactive.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/oldbackupstojson.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Data/estructura_iteracion" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/exc_write.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Tests/fname" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/file_name" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170421.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170421.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170424.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170424.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170425.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170425.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170426.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170426.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170428.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170428.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170502.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170502.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170503.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170503.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170504.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170504.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170505.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170505.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170508.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170508.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170510.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170510.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170511.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170511.dat" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Data/Fondos-20170512.dat" afterPath="$PROJECT_DIR$/Data/HTML/Fondos-20170512.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/tabledate.py" afterPath="$PROJECT_DIR$/Tests/tabledate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fondo.py" afterPath="$PROJECT_DIR$/fondo.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Santander-Fondos" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="fondo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fondo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+              <folding>
+                <element signature="e#216#220#0" expanded="false" />
+                <element signature="e#310#1575#0" expanded="false" />
+                <element signature="e#567#698#0" expanded="false" />
+                <element signature="e#728#922#0" expanded="false" />
+                <element signature="e#960#1074#0" expanded="false" />
+                <element signature="e#1130#1424#0" expanded="false" />
+                <element signature="e#1259#1424#0" expanded="false" />
+                <element signature="e#1461#1575#0" expanded="false" />
+                <element signature="e#1603#1893#0" expanded="false" />
+                <element signature="e#1708#1766#0" expanded="false" />
+                <element signature="e#1832#1893#0" expanded="false" />
+                <element signature="e#1912#2500#0" expanded="false" />
+                <element signature="e#2009#2070#0" expanded="false" />
+                <element signature="e#2102#2118#0" expanded="false" />
+                <element signature="e#2157#2180#0" expanded="false" />
+                <element signature="e#2213#2283#0" expanded="false" />
+                <element signature="e#2312#2500#0" expanded="false" />
+                <element signature="e#2593#2840#0" expanded="false" />
+                <element signature="e#2875#3079#0" expanded="false" />
+                <element signature="e#3111#3225#0" expanded="false" />
+                <element signature="e#3269#3313#0" expanded="false" />
+                <element signature="e#3344#3409#0" expanded="false" />
+                <element signature="e#3451#3642#0" expanded="false" />
+                <element signature="e#3552#3619#0" expanded="false" />
+                <element signature="e#3669#3701#0" expanded="false" />
+                <element signature="e#3730#3790#0" expanded="false" />
+                <element signature="e#3815#3949#0" expanded="false" />
+                <element signature="e#3973#3991#0" expanded="false" />
+                <element signature="e#4019#4206#0" expanded="false" />
+                <element signature="e#4231#4308#0" expanded="false" />
+                <element signature="e#4330#4449#0" expanded="false" />
+                <element signature="e#4482#4617#0" expanded="false" />
+                <element signature="e#4652#4682#0" expanded="false" />
+                <element signature="e#4709#4807#0" expanded="false" />
+                <element signature="e#4833#4998#0" expanded="false" />
+                <element signature="e#5112#5449#0" expanded="false" />
+                <element signature="e#5487#5972#0" expanded="false" />
+                <element signature="e#5771#5931#0" expanded="false" />
+                <element signature="e#5802#5931#0" expanded="false" />
+                <element signature="e#6035#6306#0" expanded="false" />
+                <element signature="e#6340#6551#0" expanded="false" />
+                <element signature="e#6589#6924#0" expanded="false" />
+                <element signature="e#6954#6999#0" expanded="false" />
+                <element signature="e#7037#7176#0" expanded="false" />
+                <element signature="e#7437#8079#0" expanded="false" />
+                <element signature="e#7450#7912#0" expanded="false" />
+                <element signature="e#7949#8077#0" expanded="false" />
+                <element signature="e#8311#8393#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fondos-20170829.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170829.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fondos-20170825.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170825.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fondos-20170824.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170824.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fondos-20170529-copy.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170529-copy.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fondos-20170529.dat" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170529.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interactive.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interactive.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sqlalch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/sqlalch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fondos-20170830.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170830.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-306">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>has_</find>
+      <find>header</find>
+      <find>row.con</find>
+      <find>len</find>
+      <find>catego</find>
+      <find>.conte</find>
+      <find>contents</find>
+      <find>esEn</find>
+      <find>class</find>
+      <find>storeData</find>
+      <find>esCate</find>
+      <find>&lt;tr&gt;</find>
+      <find>fecha</find>
+      <find>getName</find>
+      <find>getIndicadores</find>
+      <find>headers</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>extraerNombre</replace>
+      <replace>extraerIndicadores</replace>
+      <replace>LAYOUT</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/srio.py" />
+        <option value="$PROJECT_DIR$/erase_testnonrecursive.py" />
+        <option value="$PROJECT_DIR$/Tests/search_file.py" />
+        <option value="$PROJECT_DIR$/Tests/filetosearch" />
+        <option value="$PROJECT_DIR$/Tests/Fondos-20170421.dat" />
+        <option value="$PROJECT_DIR$/file_name" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Tests/backupRowsFondoSecuencia.txt" />
+        <option value="$PROJECT_DIR$/Tests/exc_write.py" />
+        <option value="$PROJECT_DIR$/Tests/deletebarran.py" />
+        <option value="$PROJECT_DIR$/Data/Fondos-20170421.dat" />
+        <option value="$PROJECT_DIR$/Data/HTML/Fondos-20170421.dat" />
+        <option value="$PROJECT_DIR$/Tests/oldbackupstojson.py" />
+        <option value="$PROJECT_DIR$/Tests/persistence.py" />
+        <option value="$PROJECT_DIR$/oldbackupstojson.py" />
+        <option value="$PROJECT_DIR$/Tests/tabledate.py" />
+        <option value="$PROJECT_DIR$/JSON/Fondos-2017-06-06.json" />
+        <option value="$PROJECT_DIR$/Tests/interactive.py" />
+        <option value="$PROJECT_DIR$/fondo.py" />
+        <option value="$PROJECT_DIR$/interactive.py" />
+        <option value="$PROJECT_DIR$/Tests/sqlalch.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Buildout</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyArgumentListInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Santander-Fondos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Santander-Fondos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Santander-Fondos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Santander-Fondos" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/mingw64/bin/git.exe" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/../srio" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/Data/Fondos-20170505.dat" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sistemas Black\PycharmProjects\Santander-Fondos\Tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sistemas\Documents\PycharmProjects\Santander-Fondos\Data\HTML" />
+      <recent name="C:\Users\Sistemas\Documents\PycharmProjects\Santander-Fondos" />
+      <recent name="C:\Users\Sistemas Black\PycharmProjects\Santander-Fondos\Data\HTML" />
+      <recent name="C:\Users\Sistemas Black\PycharmProjects\Santander-Fondos" />
+      <recent name="C:\Users\Sistemas Black\PycharmProjects\Santander-Fondos\Data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.sqlalch">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration name="deletebarran" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/deletebarran.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="fondo" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fondo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="interactive" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interactive.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="oldbackupstojson" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="C:\Users\Sistemas Black\PycharmProjects\Santander-Fondos\oldbackupstojson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="sqlalch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/sqlalch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="srio" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/srio.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="tabledate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Santander-Fondos" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tests/tabledate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Python.srio" />
+      <item index="1" class="java.lang.String" itemvalue="Python.fondo" />
+      <item index="2" class="java.lang.String" itemvalue="Python.deletebarran" />
+      <item index="3" class="java.lang.String" itemvalue="Python.oldbackupstojson" />
+      <item index="4" class="java.lang.String" itemvalue="Python.tabledate" />
+      <item index="5" class="java.lang.String" itemvalue="Python.interactive" />
+      <item index="6" class="java.lang.String" itemvalue="Python.sqlalch" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.sqlalch" />
+        <item index="1" class="java.lang.String" itemvalue="Python.interactive" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tabledate" />
+        <item index="3" class="java.lang.String" itemvalue="Python.oldbackupstojson" />
+        <item index="4" class="java.lang.String" itemvalue="Python.deletebarran" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="176451a1-4817-4746-adb3-60de1c5ae3d9" name="Default" comment="" />
+      <created>1492784849091</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1492784849091</updated>
+    </task>
+    <task id="LOCAL-00001" summary="version 0.1">
+      <created>1492788498091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492788498091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="version 0.1">
+      <created>1492788633736</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1492788633736</updated>
+    </task>
+    <task id="LOCAL-00003" summary="version 0.2">
+      <created>1493046478246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1493046478246</updated>
+    </task>
+    <task id="LOCAL-00004" summary="version 0.2">
+      <created>1493046492429</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493046492429</updated>
+    </task>
+    <task id="LOCAL-00005" summary="version 0.2-pseudo">
+      <created>1493050143738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1493050143738</updated>
+    </task>
+    <task id="LOCAL-00006" summary="version 0.2-pseudo">
+      <created>1493123413378</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1493123413378</updated>
+    </task>
+    <task id="LOCAL-00007" summary="version 0.3.0.1 getData to table">
+      <created>1493221962912</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1493221962912</updated>
+    </task>
+    <task id="LOCAL-00008" summary="20170426">
+      <created>1493222093738</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1493222093738</updated>
+    </task>
+    <task id="LOCAL-00009" summary="V0.5 Recopila exitosamente los datos de la tabla">
+      <created>1493383649043</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1493383649043</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Especificacion de alcance">
+      <created>1493384545776</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1493384545776</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Data">
+      <created>1493390824501</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1493390824501</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Version 0.5">
+      <created>1493391356800</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1493391356800</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Version 0.5">
+      <created>1493391462128</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1493391462128</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Version 0.5">
+      <created>1493391597438</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1493391597438</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Avance en control de excepciones">
+      <created>1493818927042</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1493818927042</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Mejorado el control de multiples fondos">
+      <created>1493826971025</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1493826971025</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Mejorado el control de multiples fondos">
+      <created>1493987929096</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1493987929096</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Almacenamiento encapsulado de datos de resguardo">
+      <created>1493998859615</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1493998859615</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Actualizacion de datos">
+      <created>1494427433046</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1494427433046</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Filtrado de fondos">
+      <created>1494427472729</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1494427472729</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Instanciacion de clases Fondo y FondosDeMoneda">
+      <created>1494518863564</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1494518863564</updated>
+    </task>
+    <task id="LOCAL-00022" summary="New Data">
+      <created>1494593878416</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1494593878416</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Class Historico added">
+      <created>1494596061750</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1494596061750</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Manejo de persistencia">
+      <created>1494604127654</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1494604127654</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Agregada persistencia de datos en JSON">
+      <created>1494947079999</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1494947079999</updated>
+    </task>
+    <task id="LOCAL-00026" summary="JSON Dump">
+      <created>1495020691183</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1495020691183</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Agregada persistencia de datos en JSON">
+      <created>1495020711935</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1495020711935</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Push periodico de datos">
+      <created>1502289165634</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1502289165635</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19106881" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1968" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39747635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39779875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 0.1" />
+    <MESSAGE value="version 0.2" />
+    <MESSAGE value="version 0.2-pseudo" />
+    <MESSAGE value="version 0.3.0.1 getData to table" />
+    <MESSAGE value="20170426" />
+    <MESSAGE value="V0.5 Recopila exitosamente los datos de la tabla" />
+    <MESSAGE value="Especificacion de alcance" />
+    <MESSAGE value="Data" />
+    <MESSAGE value="Version 0.5" />
+    <MESSAGE value="Avance en control de excepciones" />
+    <MESSAGE value="Mejorado el control de multiples fondos" />
+    <MESSAGE value="Almacenamiento encapsulado de datos de resguardo" />
+    <MESSAGE value="Actualizacion de datos" />
+    <MESSAGE value="Filtrado de fondos" />
+    <MESSAGE value="Instanciacion de clases Fondo y FondosDeMoneda" />
+    <MESSAGE value="New Data" />
+    <MESSAGE value="Class Historico added" />
+    <MESSAGE value="Manejo de persistencia" />
+    <MESSAGE value="JSON Dump" />
+    <MESSAGE value="Agregada persistencia de datos en JSON" />
+    <MESSAGE value="Push periodico de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push periodico de datos" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/oldbackupstojson.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="100" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Tests/exc_write.py" />
+    <entry file="file://$PROJECT_DIR$/Data/estructura_iteracion" />
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170428.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170502.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170508.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170503.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170504.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170505.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="178" lean-forward="false" selection-start-line="1" selection-start-column="178" selection-end-line="1" selection-end-column="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/company_data.pkl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rendimiento.json" />
+    <entry file="file://$PROJECT_DIR$/JSON/blabla" />
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170510.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5202">
+          <caret line="306" column="0" lean-forward="false" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-05-15.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="47" lean-forward="false" selection-start-line="0" selection-start-column="47" selection-end-line="0" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-05-12.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2143" lean-forward="false" selection-start-line="0" selection-start-column="2143" selection-end-line="0" selection-end-column="2143" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python34/Lib/site-packages/bs4/element.py" />
+    <entry file="file://$PROJECT_DIR$/Tests/persistence.py" />
+    <entry file="file://$PROJECT_DIR$/Tests/deletebarran.py" />
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-04-20.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="2948" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170421.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12733">
+          <caret line="749" column="13" lean-forward="false" selection-start-line="749" selection-start-column="13" selection-end-line="749" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oldbackupstojson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding>
+            <element signature="e#215#219#0" expanded="false" />
+            <element signature="e#309#737#0" expanded="false" />
+            <element signature="e#478#737#0" expanded="false" />
+            <element signature="e#765#1210#0" expanded="false" />
+            <element signature="e#1076#1132#0" expanded="false" />
+            <element signature="e#1202#1210#0" expanded="false" />
+            <element signature="e#1229#1498#0" expanded="false" />
+            <element signature="e#1326#1387#0" expanded="false" />
+            <element signature="e#1419#1435#0" expanded="false" />
+            <element signature="e#1474#1497#0" expanded="false" />
+            <element signature="e#1590#1837#0" expanded="false" />
+            <element signature="e#1872#2076#0" expanded="false" />
+            <element signature="e#2108#2222#0" expanded="false" />
+            <element signature="e#2266#2310#0" expanded="false" />
+            <element signature="e#2335#2466#0" expanded="false" />
+            <element signature="e#2504#2695#0" expanded="false" />
+            <element signature="e#2605#2672#0" expanded="false" />
+            <element signature="e#2722#2754#0" expanded="false" />
+            <element signature="e#2783#2843#0" expanded="false" />
+            <element signature="e#2868#3002#0" expanded="false" />
+            <element signature="e#3026#3044#0" expanded="false" />
+            <element signature="e#3072#3259#0" expanded="false" />
+            <element signature="e#3284#3361#0" expanded="false" />
+            <element signature="e#3535#3670#0" expanded="false" />
+            <element signature="e#3705#3735#0" expanded="false" />
+            <element signature="e#3762#3860#0" expanded="false" />
+            <element signature="e#3886#4009#0" expanded="false" />
+            <element signature="e#5627#5672#0" expanded="false" />
+            <element signature="e#5710#5825#0" expanded="false" />
+            <element signature="e#5860#6085#0" expanded="false" />
+            <element signature="e#6121#6765#0" expanded="false" />
+            <element signature="e#6134#6596#0" expanded="false" />
+            <element signature="e#6633#6761#0" expanded="false" />
+            <element signature="e#6869#6951#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170424.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-05-16.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170515.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170420.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-06-06.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/tabledate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170516.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-05-26.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="818" lean-forward="true" selection-start-line="0" selection-start-column="818" selection-end-line="0" selection-end-column="818" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-06-12.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-04-07.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="799" lean-forward="false" selection-start-line="0" selection-start-column="799" selection-end-line="0" selection-end-column="799" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170614.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170531.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170607.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170615.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170622.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170628.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170630.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170608.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170705.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSON/Fondos-2017-08-08.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interactive.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/sqlalch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170830.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170829.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170825.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170824.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fondo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding>
+            <element signature="e#216#220#0" expanded="false" />
+            <element signature="e#310#1575#0" expanded="false" />
+            <element signature="e#567#698#0" expanded="false" />
+            <element signature="e#728#922#0" expanded="false" />
+            <element signature="e#960#1074#0" expanded="false" />
+            <element signature="e#1130#1424#0" expanded="false" />
+            <element signature="e#1259#1424#0" expanded="false" />
+            <element signature="e#1461#1575#0" expanded="false" />
+            <element signature="e#1603#1893#0" expanded="false" />
+            <element signature="e#1708#1766#0" expanded="false" />
+            <element signature="e#1832#1893#0" expanded="false" />
+            <element signature="e#1912#2500#0" expanded="false" />
+            <element signature="e#2009#2070#0" expanded="false" />
+            <element signature="e#2102#2118#0" expanded="false" />
+            <element signature="e#2157#2180#0" expanded="false" />
+            <element signature="e#2213#2283#0" expanded="false" />
+            <element signature="e#2312#2500#0" expanded="false" />
+            <element signature="e#2593#2840#0" expanded="false" />
+            <element signature="e#2875#3079#0" expanded="false" />
+            <element signature="e#3111#3225#0" expanded="false" />
+            <element signature="e#3269#3313#0" expanded="false" />
+            <element signature="e#3344#3409#0" expanded="false" />
+            <element signature="e#3451#3642#0" expanded="false" />
+            <element signature="e#3552#3619#0" expanded="false" />
+            <element signature="e#3669#3701#0" expanded="false" />
+            <element signature="e#3730#3790#0" expanded="false" />
+            <element signature="e#3815#3949#0" expanded="false" />
+            <element signature="e#3973#3991#0" expanded="false" />
+            <element signature="e#4019#4206#0" expanded="false" />
+            <element signature="e#4231#4308#0" expanded="false" />
+            <element signature="e#4330#4449#0" expanded="false" />
+            <element signature="e#4482#4617#0" expanded="false" />
+            <element signature="e#4652#4682#0" expanded="false" />
+            <element signature="e#4709#4807#0" expanded="false" />
+            <element signature="e#4833#4998#0" expanded="false" />
+            <element signature="e#5112#5449#0" expanded="false" />
+            <element signature="e#5487#5972#0" expanded="false" />
+            <element signature="e#5771#5931#0" expanded="false" />
+            <element signature="e#5802#5931#0" expanded="false" />
+            <element signature="e#6035#6306#0" expanded="false" />
+            <element signature="e#6340#6551#0" expanded="false" />
+            <element signature="e#6589#6924#0" expanded="false" />
+            <element signature="e#6954#6999#0" expanded="false" />
+            <element signature="e#7037#7176#0" expanded="false" />
+            <element signature="e#7437#8079#0" expanded="false" />
+            <element signature="e#7450#7912#0" expanded="false" />
+            <element signature="e#7949#8077#0" expanded="false" />
+            <element signature="e#8311#8393#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170529-copy.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/HTML/Fondos-20170529.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
