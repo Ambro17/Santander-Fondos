@@ -4,6 +4,7 @@ import time
 import io
 import os
 from dateutil import parser
+
 import jsonpickle
 
 
@@ -68,6 +69,8 @@ class Fondo:
         # print 2 columns
 # ================= FUNCIONES auxiliares ================= #
 
+
+
 def removeColTags(a_web):
     col_tags = a_web.find_all("col")
     [col_tag.unwrap() for col_tag in col_tags]
@@ -80,6 +83,7 @@ def removeEmptyTags(unaweb):
     return unaweb
 
 def esCampoIndicador(td):
+
     return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
 
 def getCamposIndicadores(amotherrow):
@@ -96,6 +100,7 @@ def extraerIndicadores(amotherrow):
         valor_num = dfloat(td.string)
         indicadores.append(valor_num)
     return indicadores
+
 
 def isNegative(str):
     return '(' in str and ')' in str
@@ -224,5 +229,6 @@ rendimiento_del_dia = procesarDatos(webrio)
 # 4. --help con correspondencia entre Tipo de Renta y perfil de inversor, con comentario.
 # 1.2 Exportar Tabla historico, puntual a excel
 # 3.2 Asociar tipo de renta a perfil de aversion.
+
 
 
