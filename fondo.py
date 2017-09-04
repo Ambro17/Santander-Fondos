@@ -150,7 +150,7 @@ def objectsToJSON(rend_diario,fecha_vig):
 
 def instanciarFondo(rowsfondo):
     #fondo html to class
-    Fondos = []
+    fondos = []
     moneda = lastWord(rowsfondo[0]) #obtengo nombre de moneda (pesos, dolar, letes)
     # headers = getHeaders(rowsfondo[1]) # armar dicc?
     onlyfondosrows = rowsfondo[2:] # me quedo solo con row de fondos
@@ -158,8 +158,8 @@ def instanciarFondo(rowsfondo):
         if rowValida(row):
             # row html a clase Fondo
             fondo = Fondo( extraerNombre(row), extraerIndicadores(row))
-            Fondos.append(fondo)
-    return FondosDeMoneda(moneda,Fondos)
+            fondos.append(fondo)
+    return FondosDeMoneda(moneda,fondos)
 
 def newRendimientoDelDia(fecha_vigencia,fpes,fdol,flet):
     fondo_pesos = instanciarFondo(fpes)
@@ -178,10 +178,13 @@ def filtrarFondos(prerows):
 def procesarFondos(web, fecha):
     rows = web.div.table.find_all("tr", recursive=False)
     fondosPesos, fondosDol, fondosLetes = filtrarFondos(rows)
+    dicc = create_dic(fondosPesos,fondosDol,fondosLetes)
+    print(dicc)
     rend_diario = newRendimientoDelDia(fecha,fondosPesos,fondosDol,fondosLetes)
     objectsToJSON(rend_diario,fecha)
     return rend_diario
     #objectsToSQL tabla consultable con getRendHoy, getHistoricoFondo (idfondo?)
+
 
 def limpiarWeb(absweb):
     return removeEmptyTags(removeColTags(absweb))
@@ -197,6 +200,13 @@ def procesarDatos(webcruda):
     rend_diario = procesarFondos(web, fecha)
     return rend_diario
 
+def create_dic(fp,fdol,flet):
+    dicc = {}
+    solofondos = fp[2:] + fdol[2:] + flet[2:]
+    for index, row in enumerate(solofondos):
+        if rowValida(row):
+            dicc[index] = extraerNombre(row)
+    return dicc
 def backupSourceFile(webrio):
     try:
         # backupea el archivo, independientemente que la fecha de la tabla a parsear sea identica a la del dia anterior. Proteccion ante errores de la pagina
@@ -216,7 +226,7 @@ url = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
 webrio = urllib.request.urlopen(url).read()
 backupSourceFile(webrio)
 rendimiento_del_dia = procesarDatos(webrio)
-
+# RESOLVER CREACION DE DICCIONARIO URGENTE, PARA PODER AGILIZAR LAS BUSQUEDAS EN LA TABLA
 
 # 1. Imprimir tabla de valores del día--> Desde JSON o valores en t. de ejecucion?
 # 2. Imprimir historico de fondo--> JSON FIND in many files by name.
