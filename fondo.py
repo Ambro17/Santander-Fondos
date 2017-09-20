@@ -4,6 +4,7 @@ import time
 import io
 import os
 from dateutil import parser
+
 import jsonpickle
 
 
@@ -44,7 +45,7 @@ class RendimientoDiario:
 class FondosDeMoneda:
     'Representa una lista de fondos de cierta moneda'
     def __init__(self, tipomoneda, losfondos):
-        self.moneda = tipomoneda  
+        self.moneda = tipomoneda
         self.fondos = losfondos
     # debe contener los headers.
     def __repr__(self):
@@ -68,6 +69,8 @@ class Fondo:
         # print 2 columns
 # ================= FUNCIONES auxiliares ================= #
 
+
+
 def removeColTags(a_web):
     col_tags = a_web.find_all("col")
     [col_tag.unwrap() for col_tag in col_tags]
@@ -80,6 +83,7 @@ def removeEmptyTags(unaweb):
     return unaweb
 
 def esCampoIndicador(td):
+
     return td.name == "td" and td["align"] == "right" and td.has_attr('class') #encapsulado pues es sensible a cambios
 
 def getCamposIndicadores(amotherrow):
@@ -96,6 +100,7 @@ def extraerIndicadores(amotherrow):
         valor_num = dfloat(td.string)
         indicadores.append(valor_num)
     return indicadores
+
 
 def isNegative(str):
     return '(' in str and ')' in str
@@ -146,11 +151,11 @@ def objectsToJSON(rend_diario,fecha_vig):
     file_name = "Fondos-%s.json" % fecha_vig
     json_file = io.open(os.path.join(json_dir, file_name), "w+")
     json_file.write(json_str)
-    #print("EL Backup .JSON ha sido volado con exito")
+    print("EL Backup .JSON ha sido volado con exito")
 
 def instanciarFondo(rowsfondo):
     #fondo html to class
-    fondos = []
+    Fondos = []
     moneda = lastWord(rowsfondo[0]) #obtengo nombre de moneda (pesos, dolar, letes)
     # headers = getHeaders(rowsfondo[1]) # armar dicc?
     onlyfondosrows = rowsfondo[2:] # me quedo solo con row de fondos
@@ -158,8 +163,8 @@ def instanciarFondo(rowsfondo):
         if rowValida(row):
             # row html a clase Fondo
             fondo = Fondo( extraerNombre(row), extraerIndicadores(row))
-            fondos.append(fondo)
-    return FondosDeMoneda(moneda,fondos)
+            Fondos.append(fondo)
+    return FondosDeMoneda(moneda,Fondos)
 
 def newRendimientoDelDia(fecha_vigencia,fpes,fdol,flet):
     fondo_pesos = instanciarFondo(fpes)
@@ -168,26 +173,48 @@ def newRendimientoDelDia(fecha_vigencia,fpes,fdol,flet):
     return RendimientoDiario(fecha_vigencia,fondo_pesos,fondo_dollars,fondo_letras)
     # todo: Historico.addRendimiento( rd ) o eso va directo e json..
 
-def filtrarFondos(prerows):
+def separarFondos(prerows):
     rows = prerows[1:] # fecha ya extraida
     fpesos=rows[0:19]
     fdol=rows[19:27]
     fletes=rows[27:40]
     return (fpesos,fdol,fletes) # comienzan por header categoria/headers/rowsfondos al mismo nivel de row.
 
+
+def crear_diccionario_indicadores(row_con_headers):
+    headers = row_con_headers.find_all("th")
+    dict_indicadores = {}
+    for i, campo in enumerate(headers):
+        dict_indicadores[i] = campo.string
+    return dict_indicadores
+
+def crear_diccionario_fondos(fpes,fdolar,fletes):
+    # creo un unico diccionario con los tres fondos, podría considerar en un futuro: --> 3 dicts referenciados por uno, o buscarlos aca y depsues filtrar si es de la moneda que me pide el usuario
+    dict_fondos = {}
+    fondos_rows_only = fpes[2:] + fdolar [2:] + fletes [2:]
+    for i, fondo_row in enumerate(fondos_rows_only):
+        if rowValida(fondo_row):
+            dict_fondos[i] = extraerNombre(fondo_row)
+    return dict_fondos
+
+def create_dicts(fp,fdol,flet):
+    dict_fondos = {}
+    row_headers = fp[1]
+    dict_ind = crear_diccionario_indicadores(row_headers)
+    dict_fondos = crear_diccionario_fondos(fp,fdol,flet)
+    return dict_ind, dict_fondos
 def procesarFondos(web, fecha):
     rows = web.div.table.find_all("tr", recursive=False)
-    fondosPesos, fondosDol, fondosLetes = filtrarFondos(rows)
-    dicc = create_dic(fondosPesos,fondosDol,fondosLetes)
-    print(dicc)
+    fondosPesos, fondosDol, fondosLetes = separarFondos(rows)
+    dict_indicadores, dict_fondos = create_dicts(fondosPesos,fondosDol,fondosLetes)
     rend_diario = newRendimientoDelDia(fecha,fondosPesos,fondosDol,fondosLetes)
     objectsToJSON(rend_diario,fecha)
     return rend_diario
     #objectsToSQL tabla consultable con getRendHoy, getHistoricoFondo (idfondo?)
 
-
 def limpiarWeb(absweb):
     return removeEmptyTags(removeColTags(absweb))
+
 
 def capturarFecha(web_sincols):
     textoFecha = web_sincols.div.table.tr.th.string
@@ -197,16 +224,11 @@ def procesarDatos(webcruda):
     web_tokenizada = BeautifulSoup(webcruda, "html.parser")
     web = limpiarWeb(web_tokenizada)
     fecha = capturarFecha(web)
+    # tal vez sea mejor que procesar Fondos tenga un nombre mas descriptivo y que sean un par de funciones,no solo una
+    # obtener dicts, rendimientoDiario, volcarABaseDeDAtos
     rend_diario = procesarFondos(web, fecha)
     return rend_diario
 
-def create_dic(fp,fdol,flet):
-    dicc = {}
-    solofondos = fp[2:] + fdol[2:] + flet[2:]
-    for index, row in enumerate(solofondos):
-        if rowValida(row):
-            dicc[index] = extraerNombre(row)
-    return dicc
 def backupSourceFile(webrio):
     try:
         # backupea el archivo, independientemente que la fecha de la tabla a parsear sea identica a la del dia anterior. Proteccion ante errores de la pagina
@@ -226,13 +248,18 @@ url = "http://www.santanderrio.com.ar/ConectorPortalStore/Rendimiento"
 webrio = urllib.request.urlopen(url).read()
 backupSourceFile(webrio)
 rendimiento_del_dia = procesarDatos(webrio)
-# RESOLVER CREACION DE DICCIONARIO URGENTE, PARA PODER AGILIZAR LAS BUSQUEDAS EN LA TABLA
+
+# Funcionalidades en Orden de importancia.
 
 # 1. Imprimir tabla de valores del día--> Desde JSON o valores en t. de ejecucion?
-# 2. Imprimir historico de fondo--> JSON FIND in many files by name.
-# 3. Sugerir un fondo según móvil de inversion(anti-inflacion, ahorro, ganancia) y aversión al riesgo (r.fija, variable, m.dinero) definidas por el usuario
-# 4. --help con correspondencia entre Tipo de Renta y perfil de inversor, con comentario.
-# 1.2 Exportar Tabla historico, puntual a excel
-# 3.2 Asociar tipo de renta a perfil de aversion.
+# 2. Preguntar (a) ganar, mantener depreciacion, ahorrar
+#              (b) pesos o dolares--> 3 de mejor rend
+#              (c) te gustaria ganar mas, con el riesgo de perder dinero?
+#              (d) necesitas la plata hoy? mañana? o a futuro.
+#               Sugerir 3 Fondos! Mostrando rend
+# 3. --help con correspondencia entre Tipo de Renta y perfil de inversor, con comentario.
+# 4. Imprimir historico de fondo .
+# 5  Exportar Tabla historico/dia a excel
+
 
 
