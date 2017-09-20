@@ -3,6 +3,5 @@ Pequeño programa sin GUI que recolecta data de la página de Santander para ana
 ### Funcionalidades
 1. Imprimir tabla de valores del día
 2. Imprimir historico de fondo
-3. Sugerir un fondo según móvil de inversion y aversión al riesgo definidas por el usuario
-4. --help con correspondencia entre Tipo de Renta y perfil de inversor, con comentario.
+3. Sugerir un fondo según móvil de inversion y aversión al riesgo definidos por el usuario
 
